@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Name: Rahmani Dibansa
+        Course: BSCpE 4-2 CvSU Main
+        
+        Project started at March 19, 2022
+        Project finished at March 21, 2022
+
+        In this project I went out of my comfort zone and tried to implement other ways to 
+        make the website for activity 3. By doing so, I encountered a lot of problems along the way.
+        Most notably is how I struggled to manipulate elements that needs to be placed in an absolute
+        position. An example of which is the animation of cards in the industry expertise section.
+        It took me a lot of time to not only make it, but to also make sure that the card elements are
+        responsive.
+
+        Apart from that, I was also troubled with divs going beyong the allotted 100% width. There
+        were a lot of instances where whenever I added padding-inline to a div, it would overflow
+        and create a horizontal scrollbar. Fortunately, after an ardous session of trying, I was
+        able to fix that. Now, there are no longer overflows (as far as I know of).
+
+        In this activity, I opted not to add a lot of variables in :root. In the previous activties,
+        I think I went overboard in that aspect. Furthermore, I noticed that I should practice to 
+        avoid creating classes that will only be used once.
+
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMAINAPLOMB: AccTax</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css">
+</head>
+<body>
+
+    <header>
+        <section id = "header-section">
+            <div class = "nav-menu">
+                <div class="header-logo">
+                    <a href= "#">
+                        <h2>
+                            Aplomb
+                        </h2>
+                    </a>
+                </div>
+                <div class="hamburger-container">
+                    <div class= "hamburg-button">
+                        <span class= "bar"></span>
+                        <span class= "bar"></span>
+                        <span class= "bar"></span>
+                    </div>
+                </div>
+                <div class = "nav-content">
+                    <div class= "nav-link-container">
+                        <a href= "#header-section" class= "nav-link" id = "header-home">
+                            <p>
+                                HOME
+                            <p>
+                        </a>
+                    </div>
+                    <div class= "nav-link-container">
+                        <a href= "#about-us-section" class= "nav-link" id = "header-about">
+                            <p>
+                                ABOUT US
+                            <p>
+                        </a>
+                    </div>
+                    <div class= "nav-link-container">
+                        <a href= "#clients-section" class= "nav-link" id = "header-clients">
+                            <p>
+                                CLIENTS
+                            <p>
+                        </a>
+                    </div>
+                    <div class= "nav-link-container">
+                        <a href= "#clients-section" class= "nav-link" id = "header-resources">
+                            <p>
+                                RESOURCES
+                            <p>
+                        </a>
+                    </div>
+                    <div class= "nav-link-container">
+                        <a href= "#clients-section" class= "nav-link" id = "header-careers">
+                            <p>
+                                CAREERS
+                            <p>
+                        </a>
+                    </div>
+                    <div class= "nav-link-container">
+                        <a href= "#contact-us-section" class= "nav-link" id = "header-contact">
+                            <p>
+                                CONTACT US
+                            <p>
+                        </a>
+                    </div>
+                    <div class= "header-call-us" id = "headerCall">
+                        <div class= "call-link btn-click">
+                            <a href= "#">
+                                <div>
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h6>CALL US TODAY</h6>
+                                    <h5>xx xxx xxxx</h5>
+                                </div>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <script src= "script.js"></script>
+        </section>
+    </header>
+
+    <div class="website-body">
+        <section id = "title-section">
+            <div class= "title-page">
+                <div class="tp-content">
+                    <div class="tp-text-container">
+                        <h5>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, neque.
+                        </h5>
+                        <h1>
+                            Lorem, ipsum dolor sit amet consectetur
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sunt harum minima? Excepturi fugiat rem reiciendis saepe ducimus voluptatibus veritatis voluptates fuga dolorem aut corporis, possimus labore ratione eligendi! Iusto?
+                        </p>
+    
+                        <div class="tp-buttons-container">
+                            <a href ="https://codepen.io/remainaplomb" class="tp-learn-more" target="_blank">
+                                LEARN MORE
+                            </a>
+                            <a href ="https://facebook.com/rahmani.dibansa.GA" class="tp-contact-us" target="_blank">
+                                CONTACT US
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-socials">
+                    <a href="https://github.com/RemainAplomb" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://facebook.com/rahmani.dibansa.GA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/rahmani-dibansa-526197226/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:rahmani.dibansa.work@gmail.com" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#">
+                        <p>FOLLOW US</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section id = "about-us-section">
+            <div class = "about-us-page">
+                <div class= "au-content">
+                    <div class= "au-article">
+                        <h5 class= "primary-color-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </h5>
+                        <h1>
+                            Lorem Ipsum Proin Gravida <br>
+                            Nibh vei Velit Auctor Aliquet
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda, eos nulla sapiente eveniet sint, optio hic, minima delectus nemo suscipit amet. Praesentium pariatur necessitatibus voluptatem porro harum nemo vitae maiores corrupti vero, et accusantium eveniet quae at ipsa laborum nihil placeat iure dignissimos tempore alias consequatur explicabo! Reiciendis nobis suscipit quidem architecto explicabo. Nihil culpa officiis voluptatum reprehenderit ut iure ducimus earum impedit inventore, dicta ea optio, hic similique.
+                        </p>
+    
+                        <a href="#" class= "transparent-anchor-btn" >
+                            ABOUT US
+                            <i class="fa fa-thin fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                    <div class="au-mission">
+                        <h5>
+                            MISSION
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio ullam provident laboriosam impedit id itaque sed, fuga porro quibusdam?
+                        </p>
+                    </div>
+                    <div class="au-vission">
+                        <h5>
+                            VISSION
+                        </h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minima quasi? Earum facilis officia blanditiis. Nemo, obcaecati placeat? Nihil, quidem.
+                        </p>
+                    </div>
+                </div>
+                <div class="au-stats">
+                    <div class="au-stats-consultants stat-box">
+                        <h1>
+                            250+
+                        </h1>
+                        <h5>
+                            Consultants
+                        </h5>
+                    </div>
+                    <div class="au-stats-projects-done stat-box">
+                        <h1>
+                            430+
+                        </h1>
+                        <h5>
+                            Projects Done
+                        </h5>
+                    </div>
+                    <div class="au-stats-happy-clients stat-box">
+                        <h1>
+                            750+
+                        </h1>
+                        <h5>
+                            Happy Clients
+                        </h5>
+                    </div>
+                    <div class="au-stats-global-offices stat-box">
+                        <h1>
+                            19+
+                        </h1>
+                        <h5>
+                            Global Offices
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="industry-expertise-section" id= "clients-section">
+            <div class="industry-expertise-page">
+                <div class="industry-expertise-content">
+                    <div class="ie-text">
+                        <h5>
+                            Lorem, ipsum dolor
+                        </h5>
+                        <h1>
+                            LOREM IPSUM
+                        </h1>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa nam cupiditate assumenda? Ullam enim dicta odit nulla iusto quae laborum voluptas quaerat, rerum cumque animi sequi aut quibusdam perspiciatis distinctio, in delectus. Atque blanditiis pariatur ducimus aliquam quam eaque.
+                        </p>
+                    </div>
+    
+                    <div class="ie-expertise">
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-solid fa-thin fa-briefcase ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        Business<br>
+                                        Registration
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-solid fa-thin fa-bag-shopping ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        Product<br>
+                                        Registration
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-solid fa-thin fa-file-invoice-dollar ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        Tax<br>
+                                        Incentives
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-solid fa-thin fa-people-group ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        Recruitment
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-solid fa-thin fa-magnifying-glass ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        Executive<br>
+                                        Search
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-solid fa-thin fa-credit-card ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        Payroll
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-solid fa-thin fa-user-tie ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        HR<br>
+                                        Consulting
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class= "ie-container">
+                            <div class="ie-card">
+                                <a href="#" >
+                                    <i class="fa-brands fa-cc-visa ie-font"></i>
+                                    <h4 class= "ie-font">
+                                        Visa<br>
+                                        Processing
+                                    </h4>
+                                    <div class="ie-arrow">
+                                        <i class="fa fa-thin fa-arrow-right-long"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section id= "contact-us-section">
+            <div class="contact-us-page">
+                <div class="cu-content">
+                    <div class="container">
+                        <div class="cu-text">
+                            <h5 class= "primary-color-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </h5>
+                            <h1>
+                                Free Consultation With Our Teams
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatem itaque minima enim molestias! Non distinctio minus debitis odit ut, itaque voluptas. Dolor iste dolorem error.
+                            </p>
+    
+                            <ul class= "cu-check-list">
+                                <li>
+                                    <i class="fa fa-thin fa-check cu-check-list-icon"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </li>
+    
+                                <li>
+                                    <i class="fa fa-thin fa-check cu-check-list-icon"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </li>
+    
+                                <li>
+                                    <i class="fa fa-thin fa-check cu-check-list-icon"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </li>
+    
+                                <li>
+                                    <i class="fa fa-thin fa-check cu-check-list-icon"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </li>
+    
+                                <li>
+                                    <i class="fa fa-thin fa-check cu-check-list-icon"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-thin fa-check cu-check-list-icon"></i>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </p>
+                                </li>
+                            </ul>
+    
+                            
+            
+                            <a href="#" class= "transparent-anchor-btn" >
+                                CONTACT US
+                                <i class="fa fa-thin fa-arrow-right-long"></i>
+                            </a>
+    
+                        </div>
+                        <div class="cu-companies">
+                            <div class="cu-logo-container">
+                                <img src="img/maersk-logo.png" alt="maersk's logo">
+                            </div>
+                            <div class="cu-logo-container">
+                                <img src="img/royal-caribbean-logo.png" alt="royal caribbean logo">
+                            </div>
+                            <div class="cu-logo-container">
+                                <img src="img/meralco-logo.png" alt="meralco's logo">
+                            </div>
+                            <div class="cu-logo-container">
+                                <img src="img/aes-logo.png" alt="aes logo">
+                            </div>
+                            <div class="cu-logo-container">
+                                <img src="img/flyspaces-logo.png" alt="flyspace logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cu-image">
+                        <img src= "img/cu-image.png">
+                    </div>
+                </div>
+                <div class="cu-banner">
+                    <div class="container">
+                        <h1>
+                            Invest in Your Success <br>
+                            with RemainAplomb
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nisi natus quo? Nemo, repudiandae autem?
+                        </p>
+    
+                        <div class="cu-contact-us-today">
+                            <a href="https://facebook.com/rahmani.dibansa.GA" target="_blank">
+                                CONTACT US TODAY
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-page">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1 class= "primary-color-text">
+                        Aplomb
+                    </h1>
+                    <ul class="fl-basic-contact">
+                        <li>
+                            <h5>
+                                VISIT US:
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, <br>
+                                Lorem ipsum dolor sit amet, <br>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </li>
+                        <li>
+                            <h5>
+                                PHONE:
+                            </h5>
+                            <p class= "primary-color-text">
+                                xx xxx xxxx
+                            </p>
+                        </li>
+                        <li>
+                            <h5>
+                                EMAIL:
+                            </h5>
+                            <p class= "primary-color-text">
+                                rahmani.dibansa.work@gmail.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class= "footer-quick-links">
+                    <h5>
+                        QUICK LINKS
+                    </h5>
+                    <ul class= "fq-list"> 
+                        <li>
+                            <a href= "#" class= "footer-clickable-anchor">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href= "#" class= "footer-clickable-anchor">
+                                Clients
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href= "#" class= "footer-clickable-anchor">
+                                Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a href= "#" class= "footer-clickable-anchor">
+                                Careers
+                            </a>
+                        </li>
+                        <li>
+                            <a href= "#" class= "footer-clickable-anchor">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h5 class= "horizontal-line">
+                        <span>
+                            SERVICES
+                        </span>
+                    </h5>
+                    <div class="fs-links-list">
+                        <ul>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    Business Registration
+                                </a>
+                            </li>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    Product Registration
+                                </a>
+                            </li>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    Tax Incentives
+                                </a>
+                            </li>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    Recruitment
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    Executive Search
+                                </a>
+                            </li>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    Payroll
+                                </a>
+                            </li>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    HR Consulting
+                                </a>
+                            </li>
+                            <li>
+                                <a href= "#" class= "footer-clickable-anchor">
+                                    Visa Processing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>
+                    @ Clone of AccTax
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/RemainAplomb" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://facebook.com/rahmani.dibansa.GA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/rahmani-dibansa-526197226/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:rahmani.dibansa.work@gmail.com" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

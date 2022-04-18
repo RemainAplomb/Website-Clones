@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Name: Rahmani Dibansa
+        Course: BSCpE 4-2 CvSU Main
+        
+        Project started at March 22, 2022
+        Project finished at March 24, 2022
+
+        In this Acitivity, I had a fun time using flex. I was able to play with it and 
+        have a better understanding of it. Fortunately, it wasn't that hard to understand.
+        However, as of march 24, 1:00am, I am troubled with the red asterisk in the 
+        placeholder of input box. I searched through stackoverflow and codepen.io. 
+        Although there were great solutions to it, it puts me off that the solutions has a
+        lengthy css. Everything has been finished apart from that red asterisk.
+
+        Update: March 28, 2022 2:00am
+
+        I've been busy in the past couple of days and had no time to tend to this. 
+        Since I can't find a better solution to the red asterisk problem that I am facing. 
+        I opted to copy one of the solutions that I found. I just edited it a little bit.
+
+        Another thing that I forgot to mention before is that I can't find the kepler-std font,
+        the best that I found was kepler-std-semicondensed-dis. I left it on comment since 
+        I don't really like how it looks.
+
+        Overall, I worked on the goal that I set in the previous activity. I tried to reuse
+        classes as much as possible. I will keep on working on this goal. Another goal that 
+        I will be setting for myself is to properly use tags. 
+
+     -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemainAplomb: Barbers</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rxp4ila.css">
+</head>
+<body>
+    <header>
+        <div class="header-removable">
+            <div class="page-container">
+                <div class="header-removable-item scale-animate">
+                    <a href="#">
+                        <i class="fa fa-thin fa-envelope"></i>
+                        youremail@gmail.com
+                    </a>
+                </div>
+                <div class="header-removable-item scale-animate">
+                    <a href="#">
+                        <i class="fa-solid fa-thin fa-mobile-screen"></i>
+                        (046) 123 - 4567
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-page">
+            <div class="page-container">
+                <div class="header-logo">
+                    <h1 class="clr-primary-text">
+                        BARBERS
+                    </h1>
+                </div>
+                <div class="hamburger-container">
+                    <div class= "hamburg-button">
+                        <span class= "bar"></span>
+                        <span class= "bar"></span>
+                        <span class= "bar"></span>
+                    </div>
+                </div>
+                <div class="navigation-menu">
+                    <ul class= "nav-list">
+                        <li>
+                            <a href="#home-section">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about-us-section">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#our-services-section">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testimonials-section">
+                                Testimonials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#our-team-section">
+                                Our Team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact-us-section">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id= "home-section">
+        <div class="home-page">
+            <div class="page-container">
+                <div class="home-title clr-white-text">
+                    <h1 class="bold-text">
+                        Quality Barber Shop
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, saepe? Quisquam soluta neque iste blanditiis sint asperiores ratione ab obcaecati.
+                    </p>
+                </div>
+                <div class="home-buttons">
+                    <a class="rounded-button scale-animate transparent-bg">
+                        LEARN MORE
+                    </a>
+                    <a class="rounded-button scale-animate clr-primary-bg">
+                        CONTACT US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id= "about-us-section">
+        <div class="about-us-page">
+            <div class="page-container">
+                <div class="article">
+                    <h5>
+                        THE UNIQUE STORY
+                    </h5>
+                    <h2 class= "clr-primary-text">
+                        50 YEARS OF EXPERIENCE
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae corporis, consequatur delectus fugiat amet numquam omnis iusto labore rerum facere dolorum ut possimus id. Aperiam dolorum placeat unde quaerat. Tempora soluta excepturi tempore rem culpa eos quod ipsum quas eaque! Vel illum, hic quasi obcaecati accusantium perspiciatis temporibus officia earum?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores id quisquam corporis ratione odio quas saepe obcaecati deserunt esse distinctio delectus, voluptate eum laborum consequatur? Molestiae earum dolorem impedit ratione vel nemo ea quisquam incidunt vero, quidem consequatur commodi!
+                    </p>
+                    <div class="article-buttons">
+                        <a class="rounded-button scale-animate clr-primary-bg">
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+                <div class="about-us-image">
+                    <img src="img/barbershop-interior.png" alt="Barbershop interior">
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id= "our-services-section">
+        <div class="our-services-page">
+            <div class="page-container">
+                <div class="services-text">
+                    <div class="services-title">
+                        <h5 class="clr-grey-text">
+                            NOTHING BUT THE BEST
+                        </h5>
+                        <h2 class= "clr-primary-text">
+                            OUR SERVICES
+                        </h2>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/classic-haircut.png" alt="Classic Haircut">
+                            </div>
+                            <div class="card-text">
+                                <h5>
+                                    CLASSIC HAIRCUT
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo at nam quia culpa ullam omnis necessitatibus totam! Illo, mollitia!
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a class="rounded-button scale-animate">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/clipper-cut.png" alt="Clipper Haircut">
+                            </div>
+                            <div class="card-text">
+                                <h5>
+                                    CLIPPER HAIRCUT
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo at nam quia culpa ullam omnis necessitatibus totam! Illo, mollitia!
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a class="rounded-button scale-animate">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/razoe-shaver.png" alt="Razoe Shaver">
+                            </div>
+                            <div class="card-text">
+                                <h5>
+                                    RAZOE SHAVER
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo at nam quia culpa ullam omnis necessitatibus totam! Illo, mollitia!
+                                </p>
+                            </div>
+                            <div class="card-button">
+                                <a class="rounded-button scale-animate">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id= "testimonials-section">
+        <div class="testimonials-page">
+            <div class="page-container">
+                <div class="testimonial-title">
+                    <h5 class= "clr-grey-text">
+                        1000+ HAPPY CLIENTS
+                    </h5>
+                    <h2 class= "clr-primary-text">
+                        TESTIMONIALS
+                    </h2>
+                </div>
+                <div class="carousel">
+                    <div class="carousel__item">
+                        <div class="testimonial-message">
+                            <p>
+                                ANG GUSTO KO LANG MALAMAN ANG ORDER KO E BULALO BAKIT AKO BIBIGYAN CUP NOODLES BAKIT KO BABAYARAN YUNG CUP NOODLES PARE ANG BULALO MAY BUTO BUTO MAY LAMAN PARE SINUSUTSUT SSSSSS SINUSUTSUT ANG BULALO PARE ANG CUP NOODLES PARE NOODLES! NOODLES PARE!
+                            </p>
+                        </div>
+                        <div class="testimonial-identity">
+                            <p class= "name">
+                                Bulalo Man
+                            </p>
+                            <p class= "date">
+                                date nakalimutan ko
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="testimonial-message">
+                            <p>
+                                Yo, Big Shaq, the one and only
+                                Man's not hot, never hot
+                                Skrrat (GottiOnEm), skidi-kat-kat
+                                Boom
+                                Two plus two is four
+                                Minus one that's three, quick maths
+                                Everyday man's on the block
+                                Smoke trees (Ah)
+                                See your girl in the park
+                                That girl is a uckers
+                                When the ting went quack-quack-quack
+                                You man were ducking (You man ducked)
+                            </p>
+                        </div>
+                        <div class="testimonial-identity">
+                            <p class= "name">
+                                Big Shaq, Rapper
+                            </p>
+                            <p class= "date">
+                                2017
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="testimonial-message">
+                            <p>
+                                I just wanna tell you how I'm feeling
+                                Gotta make you understand
+                                Never gonna give you up
+                                Never gonna let you down
+                                Never gonna run around and desert you
+                                Never gonna make you cry
+                                Never gonna say goodbye
+                                Never gonna tell a lie and hurt you
+                            </p>
+                        </div>
+                        <div class="testimonial-identity">
+                            <p class= "name">
+                                Rick Astley
+                            </p>
+                            <p class= "date">
+                                1987
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="carousel__nav">
+                        <span class="carousel__button"></span>
+                        <span class="carousel__button"></span>
+                        <span class="carousel__button"></span>
+                    </div> -->
+                </div>
+                <script src= "carousel.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <section id= "our-team-section">
+        <div class="our-team-page">
+            <div class="page-container">
+                <div class= "our-team-title">
+                    <h5 class= "clr-grey-text">
+                        PROFESSIONAL
+                    </h5>
+                    <h2 class= "clr-primary-text">
+                        OUR TEAM
+                    </h2>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card2-image">
+                            <img src="img/paul-narch.png" alt="Paul Narch">
+                        </div>
+                        <div class="card2-text">
+                            <h5>
+                                PAUL NARCH
+                            </h5>
+                            <p>
+                                BARBER
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card2-image">
+                            <img src="img/steven-josephin.png" alt="Steven Josephin">
+                        </div>
+                        <div class="card2-text">
+                            <h5>
+                                STEVEN JOSEPHIN
+                            </h5>
+                            <p>
+                                BARBER
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card2-image">
+                            <img src="img/alexander-david.png" alt="Alexander David">
+                        </div>
+                        <div class="card2-text">
+                            <h5>
+                                ALEXANDER DAVID
+                            </h5>
+                            <p>
+                                SHAVER
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id= "make-appointment-section">
+        <div class="make-appointment-banner">
+            <div class="page-container">
+                <div class="text-container">
+                    <h1 class= "clr-primary-text">
+                        GET FLAT 25% DISCOUNT!
+                    </h1>
+                    <p>
+                        Get Flat 25% Discount on every sunday of December. Use the promo code below.
+                    </p>
+                    <h2>
+                        #BARBEARDS
+                    </h2>
+                </div>
+                <div class="make-appointment-banner-button">
+                    <a class="rounded-button scale-animate clr-primary-bg">
+                        MAKE AN APPOINTMENT NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us-page">
+            <div class="page-container" id= "contact-us-section">
+                <div class= "contact-us-title">
+                    <h5 class= "clr-grey-text">
+                        CONTACT US
+                    </h5>
+                    <h2 class= "clr-primary-text">
+                        MAKE AN APPOINTMENT
+                    </h2>
+                </div>
+
+                <div class="contact-text">
+                    <div class="contact-article">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit iste placeat eum quisquam ducimus atque illo nam accusantium nesciunt praesentium eligendi esse et facere, corrupti modi ad sit! Illo fuga sapiente nostrum ipsam voluptatibus? Cum nemo excepturi corporis accusamus perspiciatis.
+                        </p>
+                    </div>
+                    <div class="contact-information">
+                        <p class= "bold-text">
+                            Contact Information:
+                        </p>
+                        <div class="contact-information-item">
+                            <i class="fa-solid fa-thin fa-location-dot"></i>
+                            <a href="#">
+                                123 Your Address Here
+                            </a>
+                        </div>
+                        <div class="contact-information-item">
+                            <i class="fa fa-thin fa-envelope"></i>
+                            <a href="#">
+                                youremail@gmail.com
+                            </a>
+                        </div>
+                        <div class="contact-information-item">
+                            <i class="fa-solid fa-thin fa-mobile-screen"></i>
+                            <a href="#">
+                                (046) 123 - 4567
+                            </a>
+                        </div>
+                    </div>
+                    <div class="working-hours">
+                        <p class= "bold-text">
+                            Working Hours:
+                        </p>
+                        <div class="working-hours-item">
+                            <p class= "day">
+                                Monday to Friday
+                            </p>
+                            <p class="time">
+                                9 AM - 6 PM
+                            </p>
+                        </div>
+                        <div class="working-hours-item">
+                            <p class= "day">
+                                Saturday
+                            </p>
+                            <p class="time">
+                                9 AM - 5 PM
+                            </p>
+                        </div>
+                        <div class="working-hours-item">
+                            <p class= "day">
+                                Sunday
+                            </p>
+                            <p class="time">
+                                9 AM - 12 NN
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="contact-article">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius adipisci a qui temporibus commodi nisi unde quasi saepe nihil atque?
+                        </p>
+                    </div>
+                    <div class="contact-input">
+                        <div class="textfield half-textfield">
+                            <input id="contact-input-name" class="textfield__input" required>
+                            <label for="contact-input-name" class="textfield__label textfield__label_required"> Name</label>
+                        </div>
+                        <div class="textfield half-textfield">
+                            <input id="contact-input-phone-number" class="textfield__input" required>
+                            <label for="contact-input-phone-number" class="textfield__label textfield__label_required"> Phone Number</label>
+                        </div>
+                        <div class="textfield">
+                            <input id="contact-input-email" class="textfield__input" required>
+                            <label for="contact-input-email" class="textfield__label textfield__label_required"> Email</label>
+                        </div>
+                        <div class="textfield">
+                            <input type="text" id="contact-input-message" class="textfield__input" required>
+                            <label for="contact-input-message" class="textfield__label"> Message</label>
+                        </div>
+                        <div class= "contact-buttons">
+                            <button type="submit" class="rounded-button clr-primary-bg">
+                                SUBMIT
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id= "footer-section">
+            <div class="footer-banner">
+                <img src="img/footer-banner.png" alt="Map">
+            </div>
+            <div class="footer-navigation">
+                <div class="page-container">
+                    <div class="footer-title">
+                        <h1 class= "clr-primary-text">
+                            BARBERS
+                        </h1>
+                    </div>
+                    <div class="footer-nav-list">
+                        <ul>
+                            <li>
+                                <a href="#home-section">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about-us-section">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#testimonials-section">
+                                    Testimonials
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#our-team-section">
+                                    Our Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact-us-section">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="page-container">
+                    <p>
+                        Clone: BARBERS @ 2018. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src= "script.js"></script>
+</body>
+</html>
